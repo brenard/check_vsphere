@@ -74,7 +74,7 @@ def run():
         args._si,
         vim.VirtualMachine,
         begin_entity=args._si.content.rootFolder,
-        properties=["name", "runtime.powerState"],
+        properties=["name", "config.template", "runtime.powerState"],
     )
 
     for vm in vms:
