@@ -109,7 +109,7 @@ def run():
             check.add_message(Status.OK, f"{name} is running")
         else:
             check.add_message(
-                Status.UNKNOWN,
+                Status.WARNING,
                 f"{name} status is unknown ({powerState}, "
                 f"autoStart: {'enabled' if autoStart else 'disabled'})"
             )
